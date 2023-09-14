@@ -71,9 +71,9 @@
     <section id="Login">
         <div class="container-fluid" >
               <div class="row" style="min-height:100vh">
-                    <div class="col-6 p-0 d-flex flex-column justify-content-between align-items-end pe-5 py-3" style="background:url('/storage/images/asset_website/backgroundlogin.png');background-repeat: no-repeat; background-size: cover;" alt="ironmanlogin">
+                    <div class="col-6 p-0 d-flex flex-column justify-content-between align-items-end pe-5 py-3" style="background:url('./storage/images/asset_website/backgroundlogin.png');background-repeat: no-repeat; background-size: cover;" alt="ironmanlogin">
                             <div class="d-flex align-items-end flex-column">
-                                <img src="{{ url('/storage/images/asset_website/welcome.png') }}" alt="logo" class="img-fluid mb-2" style="height: 140px;">
+                                <img src="{{ url('./storage/images/asset_website/welcome.png') }}" alt="logo" class="img-fluid mb-2" style="height: 140px;">
                                 <p class="d-flex justify-content-end text-white" style="font-family: Inter; font-size: 16px;">Lorem ipsum dolor sit amet.</p>
                             </div>
                             <div class="d-flex flex-column">
@@ -170,17 +170,17 @@
                                 <div class="d-flex flex-row justify-content-center gap-5" style="font-family: Inter; font-size: 16px; margin-top: 30px;">
                                     <div class="d-flex flex-column align-items-center">
 
-                                            <img src="{{ url('/storage/images/asset_website/Google.png') }}" alt="" style="margin-bottom: 13px;">
+                                            <img src="{{ url('./storage/images/asset_website/Google.png') }}" alt="" style="margin-bottom: 13px;">
                                             <p class="text-white">Google</p>
                                     </div>
                                     <div class="d-flex flex-column align-items-center">
 
-                                            <img src="{{ url('/storage/images/asset_website/Facebook.png') }}" alt="" style="margin-bottom: 13px;">
+                                            <img src="{{ url('./storage/images/asset_website/Facebook.png') }}" alt="" style="margin-bottom: 13px;">
                                             <p class="text-white">Facebook</p>
                                     </div>
                                     <div class="d-flex flex-column align-items-center">
 
-                                            <img src="{{ url('/storage/images/asset_website/Twitter.png') }}" alt="" style="margin-bottom: 13px;">
+                                            <img src="{{ url('./storage/images/asset_website/Twitter.png') }}" alt="" style="margin-bottom: 13px;">
                                             <p class="text-white">Twitter</p>
                                     </div>
                                 </div>
