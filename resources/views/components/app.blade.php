@@ -21,7 +21,7 @@
 
         <nav class="sticky-top p-0 m-0 navbar navbar-expand-md navbar-dark shadow-sm" style="background: #121212;">
             <div class="container ">
-                <a class="navbar-brand navbar-logo col-2" href="{{ url('/') }}">
+                <a class="navbar-brand navbar-logo col-2" style="letter-spacing: -0.1em" href="{{ url('/') }}">
                     {{ config('app.name', 'KOSUPLAY') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -59,7 +59,7 @@
                                     <li><a href="{{ route('orders.index') }}" class="p-0 m-0 text-decoration-none text-white">Your Orders</a></li>
                                     {{-- <li><a href="{{ route('carts.index') }}" class="p-0 m-0 text-decoration-none text-white">Cart</a></li> --}}
                               </div>
-                              
+
                               <li class="nav-item dropdown">
                                     <div class="d-flex gap-3 align-items-center">
                                         <form class="d-none d-sm-none d-lg-flex" role="search">
@@ -86,7 +86,7 @@
                                             @csrf
                                             </form>
                                         </div>
-                                        
+
                                     </div>
                               </li>
                         </ul>
@@ -128,7 +128,7 @@
                                     </div>
                               </div>
                         </div>
-                        
+
                         <div class="col-3 d-flex justify-content-start flex-column">
                               <div class="d-flex flex-column justify-content-center">
                                     <a href="{{ route('home') }}" style="letter-spacing: -0.125rem;font-size: 40px; font-family: 'Oswald'; text-decoration: none; color: white;">
@@ -137,11 +137,11 @@
                                     <p class="text-white pt-2">© Copyright - KOSUPLAY Property.</p>
                               </div>
                         </div>
-                        
+
                   </div>
             </div>
-            
-            
+
+
         </footer>
     </div>
 </body>
