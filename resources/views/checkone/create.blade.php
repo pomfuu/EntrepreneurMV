@@ -16,9 +16,9 @@
                         @csrf
                         <input type="hidden" value="{{ $checkout->id }}" name="checkout">
                         <button type="submit" class="btn btn-danger">Back</button>
-                        
+
                   </form>
-                  <div>  
+                  <div>
                         @if( isset($addressOne) && isset($paymentMethodOne) )
                               <form action="{{ route('confirmations.view') }}" method="POST" id="formproduct" enctype="multipart/form-data">
                                     @csrf
@@ -83,10 +83,10 @@
                                                       @endforeach
                                                 </select>
                                           </div>
-                                          
+
                                     </div>
                                     <input type="hidden" value="{{ $codeConfirmation }}" name="codeConfirmation">
-                                    
+
                                     <input type="hidden" value="{{ $checkout->id }}" name="checkout">
                                     <div class="col-md-5">
                                           <div class="card">
@@ -121,7 +121,7 @@
 
                               <div id="product-slider" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                          <div class="carousel-item active">       
+                                          <div class="carousel-item active">
                                                 <div class="d-flex gap-2" style="overflow:auto">
                                                       {{-- @foreach($confirmations as $confirmation) --}}
                                                       <div class="col-4">
@@ -154,7 +154,7 @@
             </div>
             </section>
             <section>
-                  <div class="container my-5 text-white">
+                  <div class="container mt-5 text-white">
                         <div class="row">
                         <div class="col">
                               <div class="col-12">
@@ -212,7 +212,7 @@
                                                 </div>
                                                       <button type="submit" class="btn custom-button">Checkout</button>
                                                 </div>
-                                          </div>                                                                            
+                                          </div>
                                           </div>
                                     </div>
                               </div>

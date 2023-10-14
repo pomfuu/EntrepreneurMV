@@ -17,27 +17,32 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'Jiro Cosplay',
                 'description' => 'Whisper of the Wind Ghibli',
-                'price' => '150000'
+                'price' => '150000',
+                'image' => 'Jiro.png'
             ],
             [
                 'name' => 'Kuronuma Cosplay',
                 'description' => 'Kimi ni Todoke',
-                'price' => '100000'
+                'price' => '100000',
+                'image' => 'Kuronuma.png'
             ],
             [
                 'name' => 'Kujo Jotaro',
                 'description' => 'Jojo no Kimyou na Bouken',
-                'price' => '200000'
+                'price' => '200000',
+                'image' => 'KujoJotaro.png'
             ],
             [
                 'name' => 'Hu Tao',
                 'description' => 'Genshin Impact Hoyoverse',
-                'price' => '250000'
+                'price' => '250000',
+                'image' => 'HuTao.png'
             ],
             [
                 'name' => 'Killjoy',
                 'description' => 'Valorant Killjoy Cosplay',
-                'price' => '200000'
+                'price' => '200000',
+                'image' => 'Killjoy.png'
             ]
         ]);
     }

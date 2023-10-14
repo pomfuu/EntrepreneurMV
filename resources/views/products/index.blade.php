@@ -16,7 +16,7 @@
                             <div class="mb-1">
                                 <a href="{{ route('products.show', $product) }}"><img src="{{ url('/storage/images/products/' . $product->image) }}" alt="{{ $product->name . '-image' }}" style="width:120px;height:120px;object-fit:cover" class="img-fluid border border-dark rounded-2"></a>
                             </div>
-                            
+
                             <a href="{{ route('ratings.rating', $product->id) }}" type="submit" class="btn btn-warning">Rating</a>
                             <b>Review List = {{ number_format($product->averageStar,2,'.',',') }} / 5.00</b>
                             @foreach($product->ratings as $rating)
@@ -28,7 +28,7 @@
                         </div>
                     @endforeach
                 </div>
-                
+
           </div>
       </div>
 </x-app> --}}
@@ -42,7 +42,7 @@
                             <div class="d-flex flex-column" style="margin-right: 45px;">
                                 <p class="text-white" style="font-weight: 500; font-size: 20px;">FILTER BY</p>
                                 <div class="px-4 py-3 rounded-3" id="filter" style="width: 320px; height: 960px; background-color: #2a2a2a;">
-                                        
+
                                         <form action="" class="d-flex flex-column gap-3">
                                             <div id="size mb-3">
                                                     <p class="mb-2 text-white" style="font-size: 16px; font-weight: 500;">Size</p>
@@ -71,7 +71,7 @@
                                                                     <label class="form-check-label text-white" for="exampleCheck1">M</label>
                                                                 </div>
                                                         </div>
-                                                        
+
                                                     </div>
                                             </div>
                                             <div id="color">
@@ -79,42 +79,42 @@
                                                     <div>
                                                         <div class="d-flex gap-3 mb-3">
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #6E6E6E; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #9747FF; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #fbbc05; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #ff5607; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #f6412d; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #d91b5c; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                         </div>
                                                         <div class="d-flex gap-3">
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #0f75bc; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #13a89e; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #0b9444; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #8cc63f; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #ffffff; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                                 <div class="col-2 p-2" style="width: 30px;height: 30px;background: #000000; border: solid 1px white; border-radius: 50%;">
-                                                                    
+
                                                                 </div>
                                                         </div>
                                                     </div>
@@ -158,7 +158,7 @@
                                                                     <label class="form-check-label text-white" for="exampleCheck1">Other</label>
                                                                 </div>
                                                         </div>
-                                                        
+
                                                     </div>
                                             </div>
                                             <div id="price">
@@ -186,7 +186,7 @@
                                 <div class="row d-flex justify-content-between gap-4">
                                     @foreach ($products as $product)
                                         <a href="{{ route('products.show', $product) }}" class=" text-decoration-none text-white" style="width: 30%;">
-                                            <img src="{{ url('/storage/images/products/' . $product->image) }}" class="bg-dark rounded-3 col-12" style="height: 250px;object-fit:cover;">
+                                            <img src="{{ url('/storage/images/products/' . $product->image ) }}" class="bg-dark rounded-3 col-12" style="height: 250px;object-fit:cover;">
                                             <p class="m-0 mt-2" style="font-size: 20px; font-weight: 500;">{{ $product->name }}</p>
                                             <p style="font-size: 20px; font-weight: 500; color: #707070;">Rp {{ number_format($product->price,0,',','.') }}</p>
                                         </a>
@@ -198,7 +198,6 @@
             </div>
         </div>
     </div>
-    
+
 </x-app>
 
-  
